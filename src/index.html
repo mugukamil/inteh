@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
-
 <head>
 <meta charset="utf-8">
 <title>Заголовок</title>
@@ -10,8 +9,19 @@
 
 <body>
 @@include('blocks/page-header/page-header.html')
-
-<h1>Содержимое</h1>
+<div class="page-hero">
+  <div class="container">
+    <nav class="page-nav">
+      <ul>
+        <li><a href="">О компании</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Продукция</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+    <hr class="page-hero__hr">
+  </div> <!-- /.container -->
+</div> <!-- /.page-hero -->
 
 @@include('blocks/page-footer/page-footer.html')
 @@include('_include/page_bottom.html')

@@ -1,8 +1,92 @@
-// Для импорта в диспетчер подключений: @import './src/blocks/page-header/page-header.less';
-
-@import '../../less/variables.less';     // только для удобства обращения к переменным
-
-
 .page-header {
+  padding-top: 28px;
+  background-image: url(../img/header-top-bg.jpg);
+  background-size: cover;
+  min-height: 181px;
 
+  &__hr {
+    border-top: 1px solid #b1a77d;
+    border-bottom: none;
+    outline: none;
+    height: 1px;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 48px;
+    left: 0;
+  }
+
+  &__in {
+    position: relative;
+  }
+
+  &__icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .icon-call {
+      position: absolute;
+      top: 0;
+      left: 19px;
+    }
+
+    .icon-question {
+      position: absolute;
+      top: 0;
+      left: 788px;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 63px;
+    padding-left: 19px;
+    width: 100%;
+
+    a {
+      color: #000000;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      text-decoration: none;
+    }
+  }
+
+
+  &__phones,
+  &__email,
+  &__ask,
+  &__social,
+  &__logo {
+    vertical-align: top;
+    display: inline-block;
+  }
+
+  &__phones {
+    margin-right: 30px;
+  }
+
+  &__logo {
+    top: -91px;
+    position: absolute;
+    left: 470px;
+    background-color: #fff;
+    padding-top: 13px;
+  }
+
+  &__ask {
+    position: absolute;
+    right: 244px;
+  }
+
+  &__social {
+    position: absolute;
+    right: 20px;
+
+    a + a {
+      margin-left: 16px;
+    }
+  }
 }
