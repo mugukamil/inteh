@@ -18,6 +18,7 @@
 
   &__in {
     position: relative;
+    z-index: 2;
   }
 
   &__icons {
@@ -62,6 +63,18 @@
   &__logo {
     vertical-align: top;
     display: inline-block;
+
+    a {
+      &:hover {
+        color: #6a86a5;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: #b1a77d;
+        text-decoration: underline;
+      }
+    }
   }
 
   &__phones {

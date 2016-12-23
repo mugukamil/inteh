@@ -9,6 +9,7 @@
 
 <body>
 @@include('blocks/page-header/page-header.html')
+
 <div class="page-hero">
   <div class="container">
     <nav class="page-nav">
@@ -19,9 +20,28 @@
         <li><a href="">Контакты</a></li>
       </ul>
     </nav>
+
     <hr class="page-hero__hr">
+
+    <div class="page-hero__products products">
+      <div class="products__left">
+        <h1 class="products__heading"><a href="">Алмазный инструмент</a></h1>
+        <img src="img/index-almaz.png" alt="almaz">
+      </div> <!-- /.products__left -->
+
+      <div class="products__right">
+        <h1 class="products__heading"><a href="">Изделия из графита</a></h1>
+        <img src="img/index-graphite.png" alt="graphite">
+      </div> <!-- /.products__left -->
+    </div> <!-- /.page-hero__products -->
   </div> <!-- /.container -->
 </div> <!-- /.page-hero -->
+
+<div class="page-content">
+  <div class="container">
+
+  </div> <!-- /.container -->
+</div> <!-- /.page-content -->
 
 @@include('blocks/page-footer/page-footer.html')
 @@include('_include/page_bottom.html')

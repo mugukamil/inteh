@@ -2,12 +2,47 @@
   background-image: url(../img/header-bg.jpg);
   background-size: cover;
   min-height: 428px;
+  position: relative;
 
   &__hr {
     border-bottom: 1px solid #ccb684;
     height: 2px;
     border-top: 1px solid #5a421d;
     margin-top: 20px;
+  }
+}
+
+.products {
+  position: absolute;
+  margin-top: 2px;
+  padding-left: 77px;
+
+  &__heading a {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: #d2d9e2;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: #c4bc9a;
+    }
+  }
+
+  &__left,
+  &__right {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  &__left {
+    margin-right: 130px;
   }
 }
 
@@ -27,6 +62,22 @@
       font-size: 24px;
       font-weight: 400;
       text-decoration: none;
+
+      &:hover {
+        color: #d2d9e2;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: #c4bc9a;
+        text-decoration: underline;
+      }
     }
   }
+}
+
+.page-content {
+  background-image: url(../img/page-bg.jpg);
+  background-size: cover;
+  min-height: 691px;
 }
