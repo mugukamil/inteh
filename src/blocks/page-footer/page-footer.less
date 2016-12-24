@@ -1,8 +1,101 @@
-// Для импорта в диспетчер подключений: @import './src/blocks/page-footer/page-footer.less';
-
-@import '../../less/variables.less';     // только для удобства обращения к переменным
-
-
 .page-footer {
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+  height: 255px;
+  padding-top: 39px;
 
+  .container {
+    padding-left: 18px;
+    padding-right: 20px;
+  }
+
+  &__logo {
+    float: left;
+    margin-right: 14px;
+  }
+
+  &__nav {
+    padding-top: 9px;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+
+      & + li {
+        margin-left: 55px;
+      }
+    }
+
+    a {
+      color: #565650;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+
+      &:hover {
+        color: #6a86a5;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: #b1a77d;
+        text-decoration: underline;
+      }
+
+      & + a {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__hr {
+    border-top: none;
+    border-bottom: 1px solid #b1a77d;
+    margin: 16px 0 50px 0;
+  }
+
+  &__copy {
+    margin-right: 85px;
+
+    p {
+      color: #252525;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+
+  &__phones {
+    margin-right: 30px;
+  }
+
+  &__social {
+    float: right;
+    margin-top: -12px;
+
+    a + a {
+      margin-left: 16px;
+    }
+  }
+
+  .dib {
+
+    a {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.35;
+      text-decoration: none;
+
+      &:hover {
+        color: #6a86a5;
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: #b1a77d;
+        text-decoration: underline;
+      }
+    }
+  }
 }

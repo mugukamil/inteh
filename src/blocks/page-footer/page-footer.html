@@ -1,10 +1,45 @@
-<!--DEV
-
-Нужно убрать пробел между @-ами:
-
-@ @include('blocks/page-footer/page-footer.html')
-
--->
 <footer class="page-footer">
-  page-footer
+  <div class="container">
+    <div class="page-footer__logo">
+      <a href="">
+        <img src="img/footer-logo.png" alt="inteh">
+      </a>
+    </div> <!-- /.page-footer__logo -->
+
+    <div class="page-footer__right">
+      <nav class="page-footer__nav">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Новости</a></li>
+          <li>
+            <a href="#">Продукция:</a>
+            <a href="#">Алмазный инструмент,</a>
+            <a href="#">Изделия из графита</a>
+          </li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <hr class="page-footer__hr">
+
+      <div class="page-footer__copy dib">
+        <p>© 2016  ООО Инновационные технлогии
+        <br> Все права защищены.</p>
+      </div> <!-- /.page-footer__bottom -->
+
+      <div class="page-footer__phones dib">
+        <a href="tel:+79811046802">+ 7 (981) 104 68 02</a>
+        <br>
+        <a href="tel:+79219757110">+ 7 (921) 975 71 10</a>
+      </div>
+      <div class="page-footer__email dib">
+        <a href="mailto:intech16@mail.ru">intech16@mail.ru</a>
+      </div>
+      <div class="page-footer__social dib">
+        <a href=""><img src="img/icon-vk.png" alt=""></a>
+        <a href=""><img src="img/icon-fb.png" alt=""></a>
+      </div>
+    </div> <!-- /.page-footer__right -->
+
+  </div> <!-- /.container -->
 </footer>

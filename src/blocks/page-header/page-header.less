@@ -55,28 +55,6 @@
     }
   }
 
-
-  &__phones,
-  &__email,
-  &__ask,
-  &__social,
-  &__logo {
-    vertical-align: top;
-    display: inline-block;
-
-    a {
-      &:hover {
-        color: #6a86a5;
-        text-decoration: underline;
-      }
-
-      &:active {
-        color: #b1a77d;
-        text-decoration: underline;
-      }
-    }
-  }
-
   &__phones {
     margin-right: 30px;
   }
@@ -85,8 +63,26 @@
     top: -91px;
     position: absolute;
     left: 470px;
-    background-color: #fff;
     padding-top: 13px;
+    background-image: url(../img/podlojka.png);
+    width: 312px;
+    height: 247px;
+
+    .products-page & {
+      background-image: url(../img/podlojka-mini.png);
+      width: 254px;
+      height: 197px;
+
+      img {
+        width: 176px;
+        height: 154px;
+      }
+    }
+
+    img {
+      display: inline-block;
+      margin-left: 40px;
+    }
   }
 
   &__ask {
