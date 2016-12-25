@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Заголовок</title>
+<meta name="description" content="">
+@@include('_include/page_head.html')
+</head>
+
+<body class="in-page">
+@@include('blocks/page-header/page-header.html')
+
+<div class="page-content">
+  <div class="container">
+    <nav class="page-nav">
+      <ul>
+        <li><a href="">О компании</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Продукция</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <hr class="in-page__hr">
+
+    <div class="page-breadcrumbs">
+      <ul>
+        <li><a href="">Главная</a></li>
+        <li>-</li>
+        <li>Контакты</li>
+      </ul>
+    </div> <!-- /.page-breadcrumbs -->
+
+    <section class="page-section page-section--contacts contacts">
+      <h1 class="page-section__title">Контакты</h1>
+      <div class="contacts__info">
+        <p class="dib">Телефоны: </p>
+
+        <ul class="dib contacts__phones">
+          <li><a href="tel:+79811046802">+ 7 (981) 104 68 02</a></li>
+          <li><a href="tel:+79219757110">+ 7 (921) 975 71 10</a></li>
+        </ul>
+
+        <p class="dib">E-mail: <a href="mailto:intech16@mail.ru" class="contacts__email">intech16@mail.ru</a></p>
+      </div> <!-- ./contacts__info -->
+
+      <div class="contacts__social">
+        <h1 class="page-section__title">Социальные сети</h1>
+        <ul class="contacts__social-links">
+          <li><a href=""><i class="icon icon-vk"></i></a><a href="vk.com/intech">vk.com/intech</a></li>
+          <li><a href=""><i class="icon icon-fb"></i></a><a href="vk.com/intech">facebook.com/intech</a></li>
+        </ul>
+      </div> <!-- /.contacts__social -->
+
+      <div class="contacts__form">
+        <h1 class="page-section__title">Задать вопрос</h1>
+
+        <form action="" class="page-form">
+          <div>
+            <input type="text" placeholder="Ваше имя" class="page-form__name">
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="E-mail" class="page-form__email">
+            <span>или</span>
+            <input type="tel" name="phone" placeholder="Телефон" class="page-form__phone">
+          </div>
+          <div>
+            <textarea name="question" cols="30" rows="10">Задайте ваш вопрос</textarea>
+          </div>
+          <div>
+            <input type="submit" value="Отправить" class="page-form__submit">
+          </div>
+        </form>
+      </div> <!-- /.contacts__form -->
+    </section>
+  </div> <!-- /.container -->
+</div> <!-- /.page-content -->
+
+@@include('blocks/page-footer/page-footer.html')
+@@include('_include/page_bottom.html')
+</body>
+</html>
+

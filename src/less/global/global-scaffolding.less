@@ -40,7 +40,32 @@ textarea {
   touch-action: manipulation;
 }
 
+.clearfix {
+  zoom: 1;
 
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.placeholder-color(@color) {
+
+  &:-moz-placeholder,
+  &::-moz-placeholder {
+    color: @color;
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    color: @color;
+  }
+}
 
 //------------------------------------------------------------------------------
 //  Базис
@@ -101,20 +126,23 @@ p {
 .dib {
   display: inline-block;
   vertical-align: top;
+}
 
-  a {
+a {
+  color: #000;
+  text-decoration: none;
 
-    &:hover {
-      color: #6a86a5;
-      text-decoration: underline;
-    }
+  &:hover {
+    color: #6a86a5;
+    text-decoration: underline;
+  }
 
-    &:active {
-      color: #b1a77d;
-      text-decoration: underline;
-    }
+  &:active {
+    color: #b1a77d;
+    text-decoration: underline;
   }
 }
+
 
 figure {
   margin: 0;
