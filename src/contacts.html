@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html>
 <head>
 <meta charset="utf-8">
 <title>Заголовок</title>
@@ -7,7 +7,7 @@
 @@include('_include/page_head.html')
 </head>
 
-<body class="in-page">
+<body class="in-page page-contacts">
 @@include('blocks/page-header/page-header.html')
 
 <div class="page-content">
@@ -65,10 +65,10 @@
             <input type="tel" name="phone" placeholder="Телефон" class="page-form__phone">
           </div>
           <div>
-            <textarea name="question" cols="30" rows="10">Задайте ваш вопрос</textarea>
+            <textarea name="question" cols="30" rows="10" placeholder="Задайте ваш вопрос"></textarea>
           </div>
           <div>
-            <input type="submit" value="Отправить" class="page-form__submit">
+            <a href="" class="page-form__submit">Отправить</a>
           </div>
         </form>
       </div> <!-- /.contacts__form -->

@@ -91,25 +91,25 @@ gulp.task('less', function () {
     .pipe(browserSync.stream());
 });
 
-// Компиляция LESS для документации
-gulp.task('less:docs', function () {
-  console.log('---------- Компиляция LESS для документации');
-  return gulp.src('src/docs-files/docs.less')
-    .pipe(less())
-    .on('error', notify.onError(function(err){
-      return {
-        title: 'Styles compilation error',
-        message: err.message
-      }
-    }))
-    .pipe(postcss([
-        autoprefixer({browsers: ['last 2 version']}),
-        mqpacker
-    ]))
-    .pipe(rename('docs.css'))
-    .pipe(gulp.dest('src/docs-files/'))
-    .pipe(browserSync.stream());
-});
+// // Компиляция LESS для документации
+// gulp.task('less:docs', function () {
+//   console.log('---------- Компиляция LESS для документации');
+//   return gulp.src('src/docs-files/docs.less')
+//     .pipe(less())
+//     .on('error', notify.onError(function(err){
+//       return {
+//         title: 'Styles compilation error',
+//         message: err.message
+//       }
+//     }))
+//     .pipe(postcss([
+//         autoprefixer({browsers: ['last 2 version']}),
+//         mqpacker
+//     ]))
+//     .pipe(rename('docs.css'))
+//     .pipe(gulp.dest('src/docs-files/'))
+//     .pipe(browserSync.stream());
+// });
 
 // Копирование добавочных CSS, которые хочется иметь отдельными файлами
 gulp.task('copy:css', function(callback) {
@@ -278,7 +278,7 @@ gulp.task('clean', function () {
 gulp.task('build', gulp.series(
   'clean',
   'svgstore',
-  gulp.parallel('less', 'less:docs', 'copy:css', 'img', 'js', 'js:copy', 'fonts:copy'),
+  gulp.parallel('less', 'copy:css', 'img', 'js', 'js:copy', 'fonts:copy'),
   'html'
 ));
 
@@ -287,7 +287,7 @@ gulp.task('serve', gulp.series('build', function() {
   browserSync.init({
     server: dirs.build,
     port: port,
-    startPath: 'blocks_library.html'
+    startPath: 'index.html'
   });
   gulp.watch([
     dirs.source + '/*.html',
@@ -295,7 +295,6 @@ gulp.task('serve', gulp.series('build', function() {
     dirs.source + '/blocks/**/*.html',
   ], gulp.series('html', reloader));
   gulp.watch(blocks.less, gulp.series('less'));
-  gulp.watch('src/docs-files/docs.less', gulp.series('less:docs'));
   if(blocks.img) {
     gulp.watch(blocks.img, gulp.series('img', reloader));
   }
