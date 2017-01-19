@@ -9,12 +9,8 @@
     "build": "cross-env NODE_ENV=production npm start build",
     "precommit": "npm test"
   },
-  "author": "Nikolay Gromov",
+  "author": "empty",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nicothin/NTH-start-project.git"
-  },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "browser-sync": "^2.11.1",
@@ -47,7 +43,6 @@
     "stylelint-declaration-use-variable": "^1.5.0"
   },
   "config": {
-    "ghPages": "http://nicothin.github.io/NTH-start-project/blocks_library.html",
     "directories": {
       "source": "./src",
       "build": "./build"
