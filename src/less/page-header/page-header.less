@@ -1,0 +1,99 @@
+.page-header {
+  padding-top: 28px;
+  background-image: url(../img/header-top-bg.jpg);
+  background-size: cover;
+  min-height: 181px;
+
+  &__hr {
+    border-top: 1px solid #b1a77d;
+    border-bottom: none;
+    outline: none;
+    height: 1px;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 48px;
+    left: 0;
+  }
+
+  &__in {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .icon-call {
+      position: absolute;
+      top: 0;
+      left: 19px;
+    }
+
+    .icon-question {
+      position: absolute;
+      top: 0;
+      left: 788px;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: 63px;
+    padding-left: 19px;
+    width: 100%;
+
+    a {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+
+  &__phones {
+    margin-right: 30px;
+  }
+
+  &__logo {
+    top: -91px;
+    position: absolute;
+    left: 470px;
+    padding-top: 13px;
+    background-image: url(../img/podlojka.png);
+    width: 312px;
+    height: 247px;
+
+    .in-page & {
+      background-image: url(../img/podlojka-mini.png);
+      width: 254px;
+      height: 197px;
+
+      img {
+        width: 176px;
+        height: 154px;
+      }
+    }
+
+    img {
+      display: inline-block;
+      margin-left: 40px;
+    }
+  }
+
+  &__ask {
+    position: absolute;
+    right: 244px;
+  }
+
+  &__social {
+    position: absolute;
+    right: 20px;
+
+    a + a {
+      margin-left: 16px;
+    }
+  }
+}
